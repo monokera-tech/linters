@@ -56,6 +56,9 @@ Metrics/ModuleLength:
 
 Metrics/MethodLength:
   Max: 15
+  
+Naming/RescuedExceptionsVariableName:
+  PreferredName: exception
 
 Style/AsciiComments:
   Enabled: false

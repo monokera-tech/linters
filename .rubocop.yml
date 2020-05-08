@@ -11,17 +11,13 @@ Layout/ArgumentAlignment:
 
 Layout/CaseIndentation:
   EnforcedStyle: end
-  
+
 Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
 
 Layout/FirstHashElementIndentation:
   Enabled: false
-  
-Layout/HashAlignment:
-  Enabled: true
-  EnforcedLastArgumentHashStyle: always_ignore
-  
+
 Layout/LineLength:
   Enabled: false
 
@@ -30,16 +26,15 @@ Layout/MultilineMethodCallIndentation:
 
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
-  
+
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
-  
+
 Layout/SpaceInsideHashLiteralBraces:
-  Enabled: false
+  EnforcedStyle: compact
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
-  EnforcedStyle: indent
 
 Metrics/AbcSize:
   Max: 20
@@ -56,36 +51,31 @@ Metrics/ModuleLength:
 
 Metrics/MethodLength:
   Max: 15
-  
+
 Naming/RescuedExceptionsVariableName:
   PreferredName: exception
 
 Style/AsciiComments:
   Enabled: false
 
-Style/BlockDelimiters:
-  Exclude:
-    - spec/**/*_spec.rb
-    
 Style/CollectionMethods:
   Enabled: true
   PreferredMethods:
     inject: 'inject'
-    
+
 Style/Documentation:
   Enabled: false
 
-Style/FormatString:
+Style/GuardClause:
   Enabled: false
 
-Style/GuardClause:
+Style/FormatString:
   Enabled: false
 
 Style/FormatStringToken:
   EnforcedStyle: template
 
 Style/FrozenStringLiteralComment:
-  EnforcedStyle: always
   SupportedStyles:
     - always
 
@@ -96,7 +86,7 @@ Style/IfUnlessModifier:
   Enabled: false
 
 Style/Lambda:
-  Enabled: false
+  EnforcedStyle: literal
 
 Style/RaiseArgs:
   Enabled: false
@@ -108,14 +98,8 @@ Style/RegexpLiteral:
   EnforcedStyle: slashes
   AllowInnerSlashes: true
 
-Style/SignalException:
-  Enabled: false
-
 Style/SingleLineBlockParams:
   Enabled: false
 
-Style/TrivialAccessors:
-  AllowPredicates: true
-  
 Style/WordArray:
   Enabled: false

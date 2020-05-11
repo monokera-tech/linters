@@ -19,7 +19,7 @@ Layout/FirstHashElementIndentation:
   Enabled: false
 
 Layout/LineLength:
-  Enabled: false
+  Max: 120
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented

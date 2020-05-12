@@ -9,20 +9,17 @@ AllCops:
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
-Layout/ParameterAlignment:
-  EnforcedStyle: with_fixed_indentation
-
 Layout/CaseIndentation:
   EnforcedStyle: end
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
 
 Layout/FirstHashElementIndentation:
   Enabled: false
 
-Layout/SpaceInsideHashLiteralBraces:
-  Enabled: false
-
 Layout/LineLength:
-  Enabled: false
+  Max: 120
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
@@ -30,42 +27,14 @@ Layout/MultilineMethodCallIndentation:
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
-Layout/HashAlignment:
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: compact
+
+Layout/SpaceAroundMethodCallOperator:
   Enabled: true
-  EnforcedLastArgumentHashStyle: always_ignore
-
-Layout/EndAlignment:
-  EnforcedStyleAlignWith: variable
-
-Style/AsciiComments:
-  Enabled: false
-
-Style/CollectionMethods:
-  Enabled: true
-  PreferredMethods:
-    inject: 'inject'
-
-Style/Documentation:
-  Enabled: false
-
-Style/BlockDelimiters:
-  Exclude:
-    - spec/**/*_spec.rb
-
-Style/GuardClause:
-  Enabled: false
-
-Style/IfUnlessModifier:
-  Enabled: false
-
-Style/Lambda:
-  Enabled: false
-
-Style/RaiseArgs:
-  Enabled: false
-
-Style/SignalException:
-  Enabled: false
 
 Metrics/AbcSize:
   Max: 20
@@ -83,7 +52,21 @@ Metrics/ModuleLength:
 Metrics/MethodLength:
   Max: 15
 
-Style/SingleLineBlockParams:
+Naming/RescuedExceptionsVariableName:
+  PreferredName: exception
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/CollectionMethods:
+  Enabled: true
+  PreferredMethods:
+    inject: 'inject'
+
+Style/Documentation:
+  Enabled: false
+
+Style/GuardClause:
   Enabled: false
 
 Style/FormatString:
@@ -92,7 +75,20 @@ Style/FormatString:
 Style/FormatStringToken:
   EnforcedStyle: template
 
-Style/WordArray:
+Style/FrozenStringLiteralComment:
+  SupportedStyles:
+    - always
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/RaiseArgs:
   Enabled: false
 
 Style/RedundantSelf:
@@ -102,11 +98,8 @@ Style/RegexpLiteral:
   EnforcedStyle: slashes
   AllowInnerSlashes: true
 
-Style/TrivialAccessors:
-  AllowPredicates: true
+Style/SingleLineBlockParams:
+  Enabled: false
 
-Style/FrozenStringLiteralComment:
-  EnforcedStyle: always
-  SupportedStyles:
-    - always
-
+Style/WordArray:
+  Enabled: false

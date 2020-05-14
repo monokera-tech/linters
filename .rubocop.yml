@@ -30,6 +30,9 @@ Layout/MultilineOperationIndentation:
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 
+Layout/SpaceInsideStringInterpolation:
+  EnforcedStyle: space
+
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: compact
 

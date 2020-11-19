@@ -40,7 +40,10 @@ Layout/SpaceAroundMethodCallOperator:
   Enabled: true
 
 Metrics/AbcSize:
-  Max: 20
+  Max: 21
+
+Metrics/CyclomaticComplexity:
+  Max: 8
 
 Metrics/BlockLength:
   Exclude:

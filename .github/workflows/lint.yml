@@ -28,3 +28,4 @@ jobs:
           RUBY_CONFIG_FILE: .rubocop.yml
           YAML_CONFIG_FILE: .yamllint.yml
           VALIDATE_ALL_CODEBASE: false
+          ACTIONS_RUNNER_DEBUG: true

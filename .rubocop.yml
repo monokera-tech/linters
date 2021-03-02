@@ -86,7 +86,7 @@ Style/HashEachMethods:
   Enabled: true
 
 Style/HashAsLastArrayItem:
-  Enabled: false
+  EnforcedStyle: no_braces
 
 Style/IfUnlessModifier:
   Enabled: false

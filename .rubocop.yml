@@ -85,6 +85,9 @@ Style/FrozenStringLiteralComment:
 Style/HashEachMethods:
   Enabled: true
 
+Style/HashAsLastArrayItem:
+  Enabled: false
+
 Style/IfUnlessModifier:
   Enabled: false
 

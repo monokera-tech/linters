@@ -1,0 +1,30 @@
+---
+name: Lint
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  superlinter:
+    runs-on: ubuntu-latest
+
+    # Skip on dependabot PRs
+    if: startsWith(github.head_ref, 'dependabot') == false
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+        with:
+          fetch-depth: 0
+
+      - name: Super-Linter
+        uses: docker://github/super-linter:latest
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+          LINTER_RULES_PATH: /
+          RUBY_CONFIG_FILE: .rubocop.yml
+          YAML_CONFIG_FILE: .yamllint.yml
+          VALIDATE_ALL_CODEBASE: false

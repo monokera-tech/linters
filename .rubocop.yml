@@ -12,6 +12,9 @@ Layout/ArgumentAlignment:
 Layout/CaseIndentation:
   EnforcedStyle: end
 
+Layout/EmptyLineBetweenDefs:
+  Enabled: false
+
 Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
 
@@ -57,6 +60,9 @@ Metrics/MethodLength:
 
 Naming/RescuedExceptionsVariableName:
   PreferredName: exception
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
 
 Style/AsciiComments:
   Enabled: false

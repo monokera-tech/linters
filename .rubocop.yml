@@ -7,6 +7,7 @@ AllCops:
     - 'db/**/*'
     - 'config/**/*'
     - 'script/**/*'
+    - 'spec/spec_helper.rb'
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
